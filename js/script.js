@@ -12,13 +12,16 @@ var quotes = [
     {quote: 'If you dream it, you can do it.', source: 'Walt Disney', }
 ]
 
-
 // Create the getRandomQuuote function and name it getRandomQuote
-
+function getRandomQuote(array){
+    return quotes[Math.floor(Math.random() * quotes.length)];
+}
 
 
 // Create the printQuote funtion and name it printQuote
-
+function printQuote(){
+    var random 
+}
 
 
 // This event listener will respond to "Show another quote" button clicks
