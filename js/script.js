@@ -12,6 +12,8 @@ var quotes = [
     {quote: 'If you dream it, you can do it.', source: 'Walt Disney', }
 ]
 
+console.log(quotes);
+
 // Create the getRandomQuuote function and name it getRandomQuote
 function getRandomQuote(array){
     return quotes[Math.floor(Math.random() * quotes.length)];
@@ -20,7 +22,12 @@ function getRandomQuote(array){
 
 // Create the printQuote funtion and name it printQuote
 function printQuote(){
-    var random 
+    var randomQuote = getRandomQuote(quotes); 
+    message = "<p class='quote'>"+ result.quote + "</p>";
+    message+= "<p class = 'source'>"+ result.author + "</p";
+    message+= "<span class='citation'> "+'<i>'+ result.citation+'</i>' + "</span>"
+    message+="<span class='year'> "+ result.year + "</span>"
+    document.getElementById('quote-box').innerHTML = stringOfQuoteProperties;
 }
 
 
